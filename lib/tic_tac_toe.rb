@@ -91,10 +91,7 @@ end
 
 def play(board)
   input = gets
-  until over?(board) 
-    turn(board)
-  end 
-  
+  turn(board) until over?(board) 
   if won?(board) 
     puts "You Won!"
   elsif draw?(board)
