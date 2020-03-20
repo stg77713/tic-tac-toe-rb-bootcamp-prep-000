@@ -93,7 +93,7 @@ def play(board)
   input = gets
   turn(board) until over?(board) 
   if won?(board) 
-    puts "You Won!"
+    puts "Congradulations #{winner(board)}"
   elsif draw?(board)
     puts"It has been a draw!"
   end 
